@@ -9,124 +9,136 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="./index.html" lang="en">WebStudio</a>
-            <ul>
-                <li><a href="./index.html">Студия</a></li>
-                <li><a href="#">Портфолио</a></li>
-                <li><a href="#">Контакты</a></li>
+    <header class="header">
+        <a class="logo header__logo" href="./index.html" lang="en">WebStudio</a>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="./index.html">Студия</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Портфолио</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
             </ul>
         </nav>
-        <ul>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="header__list">
+            <li class="header__item"><a class="header__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="header__item"><a class="header__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </header>
-    <main>
-        <section>
+    <main class="main">
+        <section class="page-portfolio">
             <h1>hide h</h1>
-            <ul>
-                <li>
-                    <button type="button">Все</button>
-                </li>
-                <li>
-                    <button type="button">Веб-сайты</button>
-                </li>
-                <li>
-                    <button type="button">Приложения</button>
-                </li>
-                <li>
-                    <button type="button">Дизайн</button>
-                </li>
-                <li>
-                    <button type="button">Маркетинг</button>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <img src="./images/cards/desctop.jpg" alt="Лого технокряка">
-                    <h2>Технокряк</h2>
-                    <p>Веб-сайт</p>
-                </li>
-                <li>
-                    <img src="./images/cards/boys.jpg" alt="Баскетболисты">
-                    <h2>Постер New Orlean vs Golden Star</h2>
-                    <p>Дизайн</p>
-                </li>
-                <li>
-                    <img src="./images/cards/fish.jpg" alt="Лого ресторана">
-                    <h2>Ресторан Seafood</h2>
-                    <p>Приложение</p>
-                </li>
-                <li>
-                    <img src="./images/cards/headphones.jpg" alt="фото наушников">
-                    <h2>Проект Prime</h2>
-                    <p>Маркетинг</p>
-                </li>
-                <li>
-                    <img src="./images/cards/boxes.jpg" alt="коробки">
-                    <h2>Проект Boxes</h2>
-                    <p>Приложение</p>
-                </li>
-                <li>
-                    <img src="./images/cards/website.jpg" alt="сайт">
-                    <h2>Inspiration has no Borders</h2>
-                    <p>Веб-сайт</p>
-                </li>
-                <li>
-                    <img src="./images/cards/book.jpg" alt="книга">
-                    <h2>Издание Limited Edition</h2>
-                    <p>Дизайн</p>
-                </li>
-                <li>
-                    <img src="./images/cards/lab.jpg" alt="логотип">
-                    <h2>Проект LAB</h2>
-                    <p>Маркетинг</p>
-                </li>
-                <li>
-                    <img src="./images/cards/laptop.jpg" alt="ноутбук">
-                    <h2>Growing Business</h2>
-                    <p>Приложение</p>
-                </li>
-            </ul>
+            <div class="button-set">
+                <ul class="button-set__list">
+                    <li class="button-set__item">
+                        <button class="button button-set__button" type="button">Все</button>
+                    </li>
+                    <li class="button-set__item">
+                        <button class="button button-set__button" type="button">Веб-сайты</button>
+                    </li>
+                    <li class="button-set__item">
+                        <button class="button button-set__button" type="button">Приложения</button>
+                    </li>
+                    <li class="button-set__item">
+                        <button class="button button-set__button" type="button">Дизайн</button>
+                    </li>
+                    <li class="button-set__item">
+                        <button class="button button-set__button" type="button">Маркетинг</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-set">
+                <ul class="card-set__list">
+                    <li class="card-set__item">
+                        <img class="card-set__image" src="./images/cards/desctop.jpg" alt="Лого технокряка">
+                        <h2 class="card-set__title">Технокряк</h2>
+                        <p class="card-set__text">Веб-сайт</p>
+                    </li>
+                    <li class="card-set__item">
+                        <img class="card-set__image" src="./images/cards/boys.jpg" alt="Баскетболисты">
+                        <h2 class="card-set__title">Постер New Orlean vs Golden Star</h2>
+                        <p class="card-set__text">Дизайн</p>
+                    </li>
+                    <li class="card-set__item">
+                        <img class="card-set__image" src="./images/cards/fish.jpg" alt="Лого ресторана">
+                        <h2 class="card-set__title">Ресторан Seafood</h2>
+                        <p class="card-set__text">Приложение</p>
+                    </li>
+                    <li class="card-set__item">
+                        <img class="card-set__image" src="./images/cards/headphones.jpg" alt="фото наушников">
+                        <h2 class="card-set__title">Проект Prime</h2>
+                        <p class="card-set__text">Маркетинг</p>
+                    </li>
+                    <li class="card-set__item">
+                        <img class="card-set__image" src="./images/cards/boxes.jpg" alt="коробки">
+                        <h2 class="card-set__title">Проект Boxes</h2>
+                        <p class="card-set__text">Приложение</p>
+                    </li>
+                    <li class="card-set__item">
+                        <img class="card-set__image" src="./images/cards/website.jpg" alt="сайт">
+                        <h2 class="card-set__title">Inspiration has no Borders</h2>
+                        <p class="card-set__text">Веб-сайт</p>
+                    </li>
+                    <li class="card-set__item">
+                        <img class="card-set__image" src="./images/cards/book.jpg" alt="книга">
+                        <h2 class="card-set__title">Издание Limited Edition</h2>
+                        <p class="card-set__text">Дизайн</p>
+                    </li>
+                    <li class="card-set__item">
+                        <img class="card-set__image" src="./images/cards/lab.jpg" alt="логотип">
+                        <h2 class="card-set__title">Проект LAB</h2>
+                        <p class="card-set__text">Маркетинг</p>
+                    </li>
+                    <li class="card-set__item">
+                        <img class="card-set__image" src="./images/cards/laptop.jpg" alt="ноутбук">
+                        <h2 class="card-set__title">Growing Business</h2>
+                        <p class="card-set__text">Приложение</p>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
-    <footer>
-        <div>
-            <a href="./index.html">WebStudio</a>
-            <address>
-                <a href="https://goo.gl/maps/m3iPj75iMBvsvAfs8" target="blank" rel="noreferrer noopener">г. Киев, пр-т
-                    Леси Украинки, 26</a>
-                <a href="mailto:info@example.com">info@example.com</a>
-                <a href="tel:+380991111111">+38 099 111 11 11</a>
-            </address>
-        </div>
-        <div>
-            <p>присоединяйтесь</p>
-            <ul>
-                <li>
-                    <a href=""></a>
+    <footer class="footer">
+        <!-- <div> -->
+        <a class="logo footer__logo" href="./index.html">WebStudio</a>
+        <address class="address footer__adrress">
+            <ul class="address__list">
+                <li class="address__item">
+                    <a class="address__link" href="https://goo.gl/maps/m3iPj75iMBvsvAfs8" target="blank"
+                        rel="noreferrer noopener">г. Киев,пр-т Леси Украинки, 26</a>
                 </li>
-                <li>
-                    <a href=""></a>
+                <li class="address__item">
+                    <a class="address__link" href="mailto:info@example.com">info@example.com</a>
                 </li>
-                <li>
-                    <a href=""></a>
+                <li class="address__item">
+                    <a class="address__link" href="tel:+380991111111">+38 099 111 11 11</a>
                 </li>
-                <li>
-                    <a href=""></a>
+            </ul>
+        </address>
+        <!-- </div> -->
+        <div class="block-join">
+            <p class="block-join__title">присоединяйтесь</p>
+            <ul class="block-join__list">
+                <li class="block-join__item">
+                    <a class="block-join__link" href=""></a>
+                </li>
+                <li class="block-join__item">
+                    <a class="block-join__link" href=""></a>
+                </li>
+                <li class="block-join__item">
+                    <a class="block-join__link" href=""></a>
+                </li>
+                <li class="block-join__item">
+                    <a class="block-join__link" href=""></a>
                 </li>
             </ul>
         </div>
-        <div>
-            <p>Подпишитесь на рассылку</p>
-            <ul>
-                <li>
-                    <button type="submit"></button>
+        <div class="block-subscribe">
+            <p class="block-subscribe__title">Подпишитесь на рассылку</p>
+            <ul class="block-subscribe__list">
+                <li class="block-subscribe__item">
+                    <button class="block-subscribe__button" type="submit"></button>
                 </li>
-                <li>
-                    <button type="button">Подписаться</button>
+                <li class="block-subscribe__item">
+                    <button class="button block-subscribe__button" type="button">Подписаться</button>
                 </li>
             </ul>
         </div>
