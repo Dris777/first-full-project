@@ -1,0 +1,266 @@
+@font-face {
+  font-family: "Releway";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/Raleway-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto-medium";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Roboto-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+:root {
+  --logoFont: "Releway";
+  --mainFont: "Roboto-regular";
+  --titleFont: "Roboto-bold";
+  --subtitleFont: "Roboto-medium";
+  --acentColor: #2196f3;
+  --mainColor: #757575;
+  --titleColor: #212121;
+  --mainTitleColor: #ffffff;
+}
+
+body {
+  background-color: var(--mainTitleColor);
+  color: var(--mainColor);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.button {
+  background: var(--acentColor);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: var(--titleFont);
+  font-size: 16px;
+  line-height: 1.8;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--mainTitleColor);
+}
+
+.title {
+  font-family: var(--titleFont);
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.hidden {
+  visibility: hidden;
+}
+/* header  */
+
+.logo {
+  font-family: var(--logoFont);
+  font-size: 26px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  color: var(--acentColor);
+}
+.logo__text {
+  color: var(--titleColor);
+}
+
+/* nav */
+
+.nav__link {
+  font-family: var(--subtitleFont);
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--titleColor);
+}
+.nav__link:hover,
+.nav__link:focus {
+  color: var(--acentColor);
+  cursor: pointer;
+}
+
+/* header__list */
+
+.header__link {
+  font-family: var(--mainFont);
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--mainColor);
+}
+.header__link:hover,
+.header__link:focus {
+  color: var(--acentColor);
+  cursor: pointer;
+}
+
+/* main */
+/* hero */
+.hero__title {
+  font-family: var(--logoFont);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 0.7;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background-color: black;
+  color: var(--mainTitleColor);
+}
+
+/* .hero__button {
+  font-family: var(--titleFont);
+  font-size: 16px;
+  line-height: 1.8;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--mainTitleColor);
+} */
+
+/* peculiarities */
+.peculiarities__title {
+  font-family: var(--titleFont);
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--titleColor);
+}
+.peculiarities__text {
+  font-family: var(--mainFont);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--mainColor);
+}
+
+/* work */
+.work__text {
+  font-family: var(--titleFont);
+  font-size: 14px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--mainTitleColor);
+  background-color: black;
+}
+
+/* team */
+.team__short-title {
+  font-family: var(--subtitleFont);
+  font-size: 16px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.team__text {
+  font-family: var(--mainFont);
+  font-size: 16px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--mainColor);
+  background-color: black;
+}
+
+/* footer */
+/* footer */
+.address__link {
+  font-family: var(--mainFont);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: black;
+}
+.address__link--white {
+  color: var(--mainTitleColor);
+  background-color: black;
+}
+
+/* block-join */
+.block-join__title {
+  font-family: var(--titleFont);
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--mainTitleColor);
+  background-color: black;
+}
+
+/* block-subscribe */
+.block-subscribe__title {
+  font-family: var(--titleFont);
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--mainTitleColor);
+  background-color: black;
+}
+
+/*  */
+/*  */
+/* portfolio */
+
+/* button-set */
+.button-set__button {
+  background: var(--acentColor);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.button-set__text {
+  font-family: var(--subtitleFont);
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--mainTitleColor);
+}
+
+/* card-set */
+.card-set__title {
+  font-family: var(--titleFont);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--titleColor);
+}
+
+.card-set__text {
+  font-family: var(--mainFont);
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: var(--mainColor);
+}
