@@ -38,6 +38,18 @@
   --mainTitleColor: #ffffff;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  outline: solid 4px black;
+}
+
 body {
   background-color: var(--mainTitleColor);
   color: var(--mainColor);
@@ -57,7 +69,7 @@ ul {
   border-radius: 4px;
   font-family: var(--titleFont);
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.87;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -67,7 +79,7 @@ ul {
 .title {
   font-family: var(--titleFont);
   font-size: 36px;
-  line-height: 1.1;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -78,10 +90,18 @@ ul {
 }
 /* header  */
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+
 .logo {
   font-family: var(--logoFont);
   font-size: 26px;
-  line-height: 1.1;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--acentColor);
 }
@@ -91,10 +111,16 @@ ul {
 
 /* nav */
 
+.nav__list {
+  display: flex;
+}
+.nav__item:not(:last-child) {
+  margin-right: 50px;
+}
 .nav__link {
   font-family: var(--subtitleFont);
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--titleColor);
 }
@@ -105,14 +131,22 @@ ul {
 }
 
 /* header__list */
+.header__list {
+  display: flex;
+}
+
+.header__item:not(:last-child) {
+  margin-right: 50px;
+}
 
 .header__link {
   font-family: var(--mainFont);
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--mainColor);
 }
+
 .header__link:hover,
 .header__link:focus {
   color: var(--acentColor);
@@ -121,15 +155,17 @@ ul {
 
 /* main */
 /* hero */
+.hero {
+  background-image: url(../images/hero/hero-bg.jpg);
+}
 .hero__title {
   font-family: var(--logoFont);
   font-weight: 900;
   font-size: 44px;
-  line-height: 0.7;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  background-color: black;
   color: var(--mainTitleColor);
 }
 
@@ -147,7 +183,7 @@ ul {
 .peculiarities__title {
   font-family: var(--titleFont);
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--titleColor);
@@ -155,7 +191,7 @@ ul {
 .peculiarities__text {
   font-family: var(--mainFont);
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--mainColor);
 }
@@ -164,7 +200,7 @@ ul {
 .work__text {
   font-family: var(--titleFont);
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.14;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -176,7 +212,7 @@ ul {
 .team__short-title {
   font-family: var(--subtitleFont);
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -184,7 +220,7 @@ ul {
 .team__text {
   font-family: var(--mainFont);
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--mainColor);
@@ -196,7 +232,7 @@ ul {
 .address__link {
   font-family: var(--mainFont);
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   background-color: black;
@@ -210,7 +246,7 @@ ul {
 .block-join__title {
   font-family: var(--titleFont);
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--mainTitleColor);
@@ -221,7 +257,7 @@ ul {
 .block-subscribe__title {
   font-family: var(--titleFont);
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--mainTitleColor);
@@ -242,7 +278,7 @@ ul {
 .button-set__text {
   font-family: var(--subtitleFont);
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--mainTitleColor);
@@ -260,7 +296,7 @@ ul {
 .card-set__text {
   font-family: var(--mainFont);
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--mainColor);
 }
