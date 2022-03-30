@@ -14,16 +14,24 @@
     <div class="container">
         <header class="header">
             <a class="logo header__logo" href="./index.html" lang="en">Web<span class="logo__text">Studio</span></a>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="./index.html">Студия</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Портфолио</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+            <nav class="nav portfolio-nav">
+                <ul class="portfolio-nav__list">
+                    <li class="nav__item portfolio-nav__item"><a class="nav__link portfolio-nav__link" href="./index.html">Студия</a></li>
+                    <li class="nav__item portfolio-nav__item portfolio-nav__item--acent"><a class="nav__link portfolio-nav__link portfolio-nav__link--acent" href="#">Портфолио</a></li>
+                    <li class="nav__item portfolio-nav__item"><a class="nav__link portfolio-nav__link" href="#">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="header__list">
-                <li class="header__item"><a class="header__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="header__item"><a class="header__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="header__item">
+                    <a class="header__link" href="mailto:info@devstudio.com">
+                        <svg class="header__icon" width="16" height="12">
+                            <use xlink:href="./images/sprite.svg#icon-mail"></use>
+                        </svg>info@devstudio.com</a></li>
+                <li class="header__item">
+                    <a class="header__link" href="tel:+380961111111">
+                        <svg class="header__icon" width="10" height="16">
+                            <use xlink:href="./images/sprite.svg#icon-phone"></use>
+                        </svg>+38 096 111 11 11</a></li>
             </ul>
         </header>
     </div>
@@ -103,7 +111,7 @@
     </main>
     <footer class="footer">
         <!-- <div> -->
-        <a class="logo header__logo" href="./index.html" lang="en">Web<span class="logo__text">Studio</span></a>
+        <a class="logo footer__logo" href="./index.html" lang="en">Web<span class="logo__text">Studio</span></a>
         <address class="address footer__adrress">
             <ul class="address__list">
                 <li class="address__item">

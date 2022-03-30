@@ -14,218 +14,252 @@
             <a class="logo header__logo" href="./index.html" lang="en">Web<span class="logo__text">Studio</span></a>
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="#">Студия</a></li>
+                    <li class="nav__item nav__item--acent"><a class="nav__link nav__link--acent" href="#">Студия</a></li>
                     <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
                     <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="header__list">
-                <li class="header__item"><a class="header__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="header__item"><a class="header__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="header__item"><a class="header__link" href="mailto:info@devstudio.com"><svg class="header__icon" width="16" height="12"><use xlink:href="./images/sprite.svg#icon-mail"></use></svg>info@devstudio.com</a></li>
+                <li class="header__item"><a class="header__link" href="tel:+380961111111"><svg class="header__icon" width="10" height="16"><use xlink:href="./images/sprite.svg#icon-phone"></use></svg>+38 096 111 11 11</a></li>
             </ul>
         </header>
     </div>
     
     <main>
         <!-- hero  -->
-        <div class="container">
+            <div class="wrap">
             <section class="hero">
-                <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+                <h1 class="hero__title">Эффективные решения<br>для вашего бизнеса</h1>
                 <button class="button hero__button" type="button">Заказать услугу</button>
+            </section>
+            </div>
+        
+        
+
+
+        <!-- peculiarities -->
+        <div class="container">
+            <section class="peculiarities">
+                <h2 class="hidden">скрыть</h2>
+            
+                <ul class="peculiarities__list">
+                    <li class="peculiarities__item">
+                        <svg class="peculiarities__image" width="270" height="120">
+                            <use xlink:href="../images/sprite.svg#icon-antenna" width="70" height="70"></use>
+                        </svg>
+                        <p class="peculiarities__title">Внимание к деталям</p>
+                        <p class="peculiarities__text">Идейные соображения, а также начало повседневной работы по формированию
+                            позиции.</p>
+                    </li>
+                    <li class="peculiarities__item">
+                        <svg class="peculiarities__image" width="270" height="120">
+                            <use xlink:href="../images/sprite.svg#icon-clock" width="70" height="70"></use>
+                        </svg>
+                        <p class="peculiarities__title">Пунктуальность</p>
+                        <p class="peculiarities__text">Задача организации, в особенности же рамки и место обучения кадров влечет за
+                            собой.</p>
+                    </li>
+                    <li class="peculiarities__item">
+                        <svg class="peculiarities__image" width="270" height="120">
+                            <use xlink:href="../images/sprite.svg#icon-diagram" width="70" height="70"></use>
+                        </svg>
+                        <p class="peculiarities__title">Планирование</p>
+                        <p class="peculiarities__text">Равным образом консультация с широким активом в значительной степени
+                            обуславливает.</p>
+                    </li>
+                    <li class="peculiarities__item">
+                        <svg class="peculiarities__image" width="270" height="120">
+                            <use xlink:href="../images/sprite.svg#icon-astronaut" width="70" height="70"></use>
+                        </svg>
+                        <p class="peculiarities__title">Современные технологии</p>
+                        <p class="peculiarities__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                        </p>
+                    </li>
+                </ul>
             </section>
         </div>
         
 
 
-        <!-- peculiarities -->
-        <section class="peculiarities">
-            <h2 class="hidden">скрыть</h2>
-
-            <ul class="peculiarities__list">
-            <li class="peculiarities__item">
-                <img class="peculiarities__image" src="" alt="первая" width="270"  height="120">
-                <p class="peculiarities__title">Внимание к деталям</p>
-                <p class="peculiarities__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-            </li>
-            <li class="peculiarities__item">
-                <img class="peculiarities__image" src="" alt="вторая" width="270"  height="120">
-                <p class="peculiarities__title">Пунктуальность</p>
-                <p class="peculiarities__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-            </li>
-            <li class="peculiarities__item">
-                <img class="peculiarities__image" src="" alt="третья" width="270"  height="120">
-                <p class="peculiarities__title">Планирование</p>
-                <p class="peculiarities__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-            </li>
-            <li class="peculiarities__item">
-                <img class="peculiarities__image" src="" alt="четвертая" width="270"  height="120">
-                <p class="peculiarities__title">Современные технологии</p>
-                <p class="peculiarities__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-            </li>
-        </ul>
-        </section>
-
-
         <!-- work -->
-        <section class="work">
-            <h2 class="title work__title">Чем мы занимаемся</h2>
-            <ul class="work__list">
-                <li class="work__item">
-                    <figure class="work__figure">
-                        <img class="work__image" src="./images/what-are-we-doing/desktop.jpg" width="370" height="294" alt="комп">
-                        <figcaption class="work__text">
-                            Десктопные приложения
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="work__item">
-                    <figure class="work__figure">
-                        <img class="work__image" src="./images/what-are-we-doing/mobile.jpg" width="370" height="294" alt="мобилка">
-                        <figcaption class="work__text">
-                            Мобильные приложения
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="work__item">
-                    <figure class="work__figure">
-                        <img class="work__image" src="./images/what-are-we-doing/design.jpg" width="370" height="294" alt="дизайнер">
-                        <figcaption class="work__text">
-                            Дизайнерские решения
-                        </figcaption>
-                    </figure>
-                </li>
-            </ul>
-        </section>
+        <div class="container">
+            <section class="work">
+                <h2 class="title work__title">Чем мы занимаемся</h2>
+                <ul class="work__list">
+                    <li class="work__item">
+                        <figure class="work__figure">
+                            <img class="work__image" src="./images/what-are-we-doing/desktop.jpg" width="370" height="294"
+                                alt="комп">
+                            <figcaption class="work__text">
+                                Десктопные приложения
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="work__item">
+                        <figure class="work__figure">
+                            <img class="work__image" src="./images/what-are-we-doing/mobile.jpg" width="370" height="294"
+                                alt="мобилка">
+                            <figcaption class="work__text">
+                                Мобильные приложения
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="work__item">
+                        <figure class="work__figure">
+                            <img class="work__image" src="./images/what-are-we-doing/design.jpg" width="370" height="294"
+                                alt="дизайнер">
+                            <figcaption class="work__text">
+                                Дизайнерские решения
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+        </div>
+       
 
 
         <!-- team -->
-        <section class="team">
-            <h2 class="title team__title">Наша команда</h2>
-            <ul class="team__list">
-                <li class="team__item">
-                    <img class="team__image" src="./images/team/igor.jpg" alt="Игорь">
-                    <h3 class="team__short-title">Игорь Демьяненко</h3>
-                    <p class="team__text">Product Designer</p>
-                    <ul class="team__list">
-                        <li class="team__item">
-                            <a class="team__link" href=""></a>
-                        </li>
-                        <li class="team__item">
-                            <a class="team__link" href=""></a>
-                        </li>
-                        <li class="team__item">
-                            <a class="team__link" href=""></a>
-                        </li>
-                        <li class="team__item">
-                            <a class="team__link" href=""></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="team__item">
-                    <img class="team__image" src="./images/team/olga.jpg" alt="Ольга">
-                    <h3 class="team__short-title">Ольга Репина</h3>
-                    <p class="team__text">Frontend Developer</p>
-                    <ul class="team__list">
-                        <li class="team__item">
-                            <a class="team__link" href=""></a>
-                        </li>
-                        <li class="team__item">
-                            <a class="team__link" href=""></a>
-                        </li>
-                        <li class="team__item">
-                            <a class="team__link" href=""></a>
-                        </li>
-                        <li class="team__item">
-                            <a class="team__link" href=""></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="team__item">
-                    <img class="team__image" src="./images/team/nikolay.jpg" alt="Коля">
-                    <h3 class="team__short-title">Николай Тарасов</h3>
-                    <p class="team__text">Marketing</p>
-                    <ul class="team__list">
-                        <li class="team__item">
-                            <a class="team__link" href=""></a>
-                        </li>
-                        <li class="team__item">
-                            <a class="team__link" href=""></a>
-                        </li>
-                        <li class="team__item">
-                            <a class="team__link" href=""></a>
-                        </li>
-                        <li class="team__item">
-                            <a class="team__link" href=""></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="team__item">
-                    <img class="team__image" src="./images/team/michael.jpg" alt="Миша">
-                    <h3 class="team__short-title">Михаил Ермаков</h3>
-                    <p class="team__text">UI Designer</p>
-                    <ul class="team__list">
-                        <li class="team__item">
-                            <a class="team__link" href=""></a>
-                        </li>
-                        <li class="team__item">
-                            <a class="team__link"  href=""></a>
-                        </li>
-                        <li class="team__item">
-                            <a class="team__link"  href=""></a>
-                        </li>
-                        <li class="team__item">
-                            <a class="team__link"  href=""></a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+        <div class="container">
+            <section class="team">
+                <h2 class="title team__title">Наша команда</h2>
+                <ul class="team__list">
+                    <li class="team__item">
+                        <img class="team__image" src="./images/team/igor.jpg" alt="Игорь">
+                        <h3 class="team__short-title">Игорь Демьяненко</h3>
+                        <p class="team__text">Product Designer</p>
+                        <ul class="team__list">
+                            <li class="team__item">
+                                <a class="team__link" href="">
+                                    <svg class="team__tumb" width="44" height="44">
+                                        <use class="team__icon" xlink:href="../images/sprite.svg#icon-instagram" width="20" height="20" ></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="team__item">
+                                <a class="team__link" href=""></a>
+                            </li>
+                            <li class="team__item">
+                                <a class="team__link" href=""></a>
+                            </li>
+                            <li class="team__item">
+                                <a class="team__link" href=""></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="team__item">
+                        <img class="team__image" src="./images/team/olga.jpg" alt="Ольга">
+                        <h3 class="team__short-title">Ольга Репина</h3>
+                        <p class="team__text">Frontend Developer</p>
+                        <ul class="team__list">
+                            <li class="team__item">
+                                <a class="team__link" href=""></a>
+                            </li>
+                            <li class="team__item">
+                                <a class="team__link" href=""></a>
+                            </li>
+                            <li class="team__item">
+                                <a class="team__link" href=""></a>
+                            </li>
+                            <li class="team__item">
+                                <a class="team__link" href=""></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="team__item">
+                        <img class="team__image" src="./images/team/nikolay.jpg" alt="Коля">
+                        <h3 class="team__short-title">Николай Тарасов</h3>
+                        <p class="team__text">Marketing</p>
+                        <ul class="team__list">
+                            <li class="team__item">
+                                <a class="team__link" href=""></a>
+                            </li>
+                            <li class="team__item">
+                                <a class="team__link" href=""></a>
+                            </li>
+                            <li class="team__item">
+                                <a class="team__link" href=""></a>
+                            </li>
+                            <li class="team__item">
+                                <a class="team__link" href=""></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="team__item">
+                        <img class="team__image" src="./images/team/michael.jpg" alt="Миша">
+                        <h3 class="team__short-title">Михаил Ермаков</h3>
+                        <p class="team__text">UI Designer</p>
+                        <ul class="team__list">
+                            <li class="team__item">
+                                <a class="team__link" href=""></a>
+                            </li>
+                            <li class="team__item">
+                                <a class="team__link" href=""></a>
+                            </li>
+                            <li class="team__item">
+                                <a class="team__link" href=""></a>
+                            </li>
+                            <li class="team__item">
+                                <a class="team__link" href=""></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        
 
 
         <!-- Regular customers -->
-        <section class="clients">
-            <h2 class="title clients__title">Постоянные клиенты</h2>
-            <ul class="clients__list">
-                <li class="clients__item">
-                    <a href="clients__link">
-                        <img class="clients__image" src="" alt="1">
-                    </a>
-                </li>
-                <li class="clients__item">
-                    <a class="clients__link" href="">
-                        <img class="clients__image" src="" alt="2">
-                    </a>
-                </li>
-                <li class="clients__item">
-                    <a class="clients__link" href="">
-                        <img class="clients__image" src="" alt="3">
-                    </a>
-                </li>
-                <li class="clients__item">
-                    <a class="clients__link" href="">
-                        <img class="clients__image" src="" alt="4">
-                    </a>
-                </li>
-                <li class="clients__item">
-                    <a class="clients__link" href="">
-                        <img class="clients__image" src="" alt="4">
-                    </a>
-                </li>
-                <li class="clients__item">
-                    <a class="clients__link" href="">
-                        <img class="clients__image" src="" alt="5">
-                    </a>
-                </li>
-            </ul>
-        </section>
+        <div class="container">
+            <section class="clients">
+                <h2 class="title clients__title">Постоянные клиенты</h2>
+                <ul class="clients__list">
+                    <li class="clients__item">
+                        <svg class="clients__tumb" width="170" height="90">
+                            <use class="clients__image" xlink:href="../images/sprite.svg#icon-logo1" width="44" height="49"></use>
+                        </svg>
+                    </li>
+                    <li class="clients__item">
+                        <svg class="clients__tumb" width="170" height="90">
+                            <use class="clients__image" xlink:href="../images/sprite.svg#icon-logo2" width="40" height="52"></use>
+                        </svg>
+                    </li>
+                    <li class="clients__item">
+                        <svg class="clients__tumb" width="170" height="90">
+                            <use class="clients__image" xlink:href="../images/sprite.svg#icon-logo3" width="41" height="43"></use>
+                        </svg>
+                    </li>
+                    <li class="clients__item">
+                        <svg class="clients__tumb" width="170" height="90">
+                            <use class="clients__image" xlink:href="../images/sprite.svg#icon-logo4" width="80" height="42"></use>
+                        </svg>
+                    </li>
+                    <li class="clients__item">
+                        <svg class="clients__tumb" width="170" height="90">
+                            <use class="clients__image" xlink:href="../images/sprite.svg#icon-logo5" width="59" height="47"></use>
+                        </svg>
+                    </li>
+                    <li class="clients__item">
+                        <svg class="clients__tumb" width="170" height="90">
+                            <use class="clients__image" xlink:href="../images/sprite.svg#icon-logo6" width="88" height="45"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </section>
+        </div>
+       
     </main>
-    <footer class="footer">
-        <!-- <div> -->
+    <div class="container">
+        <footer class="footer">
+            <!-- <div> -->
             <a class="logo footer__logo" href="./index.html">Web<span class="logo__text">Studio</span></a>
             <address class="address footer__adrress">
                 <ul class="address__list">
                     <li class="address__item">
-                        <a class="address__link address__link--white" href="https://goo.gl/maps/m3iPj75iMBvsvAfs8" target="blank" rel="noreferrer noopener">г. Киев,пр-т Леси Украинки, 26</a>
+                        <a class="address__link address__link--white" href="https://goo.gl/maps/m3iPj75iMBvsvAfs8"
+                            target="blank" rel="noreferrer noopener">г. Киев,пр-т Леси Украинки, 26</a>
                     </li>
                     <li class="address__item">
                         <a class="address__link" href="mailto:info@example.com">info@example.com</a>
@@ -235,35 +269,37 @@
                     </li>
                 </ul>
             </address>
-        <!-- </div> -->
-        <div class="block-join">
-            <p class="block-join__title">присоединяйтесь</p>
-            <ul class="block-join__list">
-                <li class="block-join__item">
-                    <a class="block-join__link" href=""></a>
-                </li>
-                <li class="block-join__item">
-                    <a class="block-join__link" href=""></a>
-                </li>
-                <li class="block-join__item">
-                    <a class="block-join__link" href=""></a>
-                </li>
-                <li class="block-join__item">
-                    <a class="block-join__link" href=""></a>
-                </li>
-            </ul>
-        </div>
-        <div class="block-subscribe">
-            <p class="block-subscribe__title">Подпишитесь на рассылку</p>
-            <ul class="block-subscribe__list">
-                <li class="block-subscribe__item">
-                    <button class="block-subscribe__button" type="submit"></button>
-                </li>
-                <li class="block-subscribe__item">
-                    <button class="button block-subscribe__button" type="button">Подписаться</button>
-                </li>
-            </ul>
-        </div>
-    </footer>
+            <!-- </div> -->
+            <div class="block-join">
+                <p class="block-join__title">присоединяйтесь</p>
+                <ul class="block-join__list">
+                    <li class="block-join__item">
+                        <a class="block-join__link" href=""></a>
+                    </li>
+                    <li class="block-join__item">
+                        <a class="block-join__link" href=""></a>
+                    </li>
+                    <li class="block-join__item">
+                        <a class="block-join__link" href=""></a>
+                    </li>
+                    <li class="block-join__item">
+                        <a class="block-join__link" href=""></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="block-subscribe">
+                <p class="block-subscribe__title">Подпишитесь на рассылку</p>
+                <ul class="block-subscribe__list">
+                    <li class="block-subscribe__item">
+                        <button class="block-subscribe__button" type="submit"></button>
+                    </li>
+                    <li class="block-subscribe__item">
+                        <button class="button block-subscribe__button" type="button">Подписаться</button>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+   
 </body>
 </html>
