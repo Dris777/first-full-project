@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <div class="container">
+    
         <header class="header">
+            <div class="container header__container">
             <a class="logo header__logo" href="./index.html" lang="en">Web<span class="logo__text">Studio</span></a>
             <nav class="nav">
                 <ul class="nav__list">
@@ -23,8 +24,9 @@
                 <li class="header__item"><a class="header__link" href="mailto:info@devstudio.com"><svg class="header__icon" width="16" height="12"><use xlink:href="./images/sprite.svg#icon-mail"></use></svg>info@devstudio.com</a></li>
                 <li class="header__item"><a class="header__link" href="tel:+380961111111"><svg class="header__icon" width="10" height="16"><use xlink:href="./images/sprite.svg#icon-phone"></use></svg>+38 096 111 11 11</a></li>
             </ul>
+            </div>
         </header>
-    </div>
+    
     
     <main>
         <!-- hero  -->
@@ -39,8 +41,9 @@
 
 
         <!-- peculiarities -->
-        <div class="container">
+        
             <section class="peculiarities">
+                <div class="container">
                 <h2 class="hidden">скрыть</h2>
             
                 <ul class="peculiarities__list">
@@ -77,14 +80,16 @@
                         </p>
                     </li>
                 </ul>
+                </div>
             </section>
-        </div>
+        
         
 
 
         <!-- work -->
-        <div class="container">
+        
             <section class="work">
+                <div class="container">
                 <h2 class="title work__title">Чем мы занимаемся</h2>
                 <ul class="work__list">
                     <li class="work__item">
@@ -115,14 +120,16 @@
                         </figure>
                     </li>
                 </ul>
+                </div>
             </section>
-        </div>
+        
        
 
 
         <!-- team -->
-        <div class="container">
+        
             <section class="team">
+                <div class="container">
                 <h2 class="title team__title">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__item">
@@ -206,54 +213,70 @@
                         </ul>
                     </li>
                 </ul>
+                </div>
             </section>
-        </div>
+        
         
 
 
         <!-- Regular customers -->
-        <div class="container">
+        
             <section class="clients">
+                <div class="container">
                 <h2 class="title clients__title">Постоянные клиенты</h2>
                 <ul class="clients__list">
                     <li class="clients__item">
-                        <svg class="clients__tumb" width="170" height="90">
-                            <use class="clients__image" xlink:href="../images/sprite.svg#icon-logo1" width="44" height="49"></use>
-                        </svg>
+                        <a href="" class="clients__link">
+                            <svg class="clients__image" width="44" height="49" >
+                                <use  xlink:href="../images/sprite.svg#icon-logo1" ></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="clients__item">
-                        <svg class="clients__tumb" width="170" height="90">
-                            <use class="clients__image" xlink:href="../images/sprite.svg#icon-logo2" width="40" height="52"></use>
-                        </svg>
+                       <a href="" class="clients__link">
+                            <svg class="clients__image" width="40" height="52">
+                                <use  xlink:href="../images/sprite.svg#icon-logo2" ></use>
+                            </svg>
+                       </a>
                     </li>
                     <li class="clients__item">
-                        <svg class="clients__tumb" width="170" height="90">
-                            <use class="clients__image" xlink:href="../images/sprite.svg#icon-logo3" width="41" height="43"></use>
-                        </svg>
+                        <a href="" class="clients__link">
+                            <svg class="clients__image" width="41" height="43">
+                                <use xlink:href="../images/sprite.svg#icon-logo3"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="clients__item">
-                        <svg class="clients__tumb" width="170" height="90">
-                            <use class="clients__image" xlink:href="../images/sprite.svg#icon-logo4" width="80" height="42"></use>
-                        </svg>
+                        <a href="" class="clients__link">
+                            <svg class="clients__image" width="80" height="42">
+                                <use xlink:href="../images/sprite.svg#icon-logo4"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="clients__item">
-                        <svg class="clients__tumb" width="170" height="90">
-                            <use class="clients__image" xlink:href="../images/sprite.svg#icon-logo5" width="59" height="47"></use>
-                        </svg>
+                        <a href="" class="clients__link">
+                            <svg class="clients__image" width=" 59" height="47">
+                                <use xlink:href="../images/sprite.svg#icon-logo5"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="clients__item">
-                        <svg class="clients__tumb" width="170" height="90">
-                            <use class="clients__image" xlink:href="../images/sprite.svg#icon-logo6" width="88" height="45"></use>
-                        </svg>
+                        <a href="" class="clients__link">
+                            <svg class="clients__image" clients__image" width="88" height="45">
+                                <use xlink:href="../images/sprite.svg#icon-logo6"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
+                </div>
             </section>
-        </div>
+        
        
     </main>
-    <div class="container">
+    
         <footer class="footer">
-            <!-- <div> -->
+            
+            <div class="container">
             <a class="logo footer__logo" href="./index.html">Web<span class="logo__text">Studio</span></a>
             <address class="address footer__adrress">
                 <ul class="address__list">
@@ -269,7 +292,7 @@
                     </li>
                 </ul>
             </address>
-            <!-- </div> -->
+            
             <div class="block-join">
                 <p class="block-join__title">присоединяйтесь</p>
                 <ul class="block-join__list">
@@ -298,8 +321,9 @@
                     </li>
                 </ul>
             </div>
+            </div>
         </footer>
-    </div>
+    
    
 </body>
 </html>
