@@ -320,7 +320,8 @@ ul {
   letter-spacing: 0.03em;
   color: #212121;
   margin-top: 30px;
-  /* font-weight: 500; НЕ ПОЙМУ ПОЧЕМУ ОТВАЛИЛОСЬ */
+  font-weight: 500; 
+  /* НЕ ПОЙМУ ПОЧЕМУ ОТВАЛИЛОСЬ */
 }
 .team__text {
   font-family: var(--mainFont);
@@ -331,33 +332,41 @@ ul {
   color: var(--mainColor);
   margin-top: 10px;
 }
-.team__social-list{
+.social-list{
   margin-top: 16px;
   display: flex;
   justify-content: center;
   
 }
-.team__social-item:not(:last-child){
+.social-list__item:not(:last-child){
   margin-right: 10px;
 }
-.team__social-link{
+.social-list__link{
   width: 44px;
-  height: 44px;
-  display: block;
+  height: 44px;;
   border-radius: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #AFB1B8;
   }
-  .team__social-link:hover{
+  .social-list__link--gray{
+    background-color: rgba(255, 255, 255, 0.1);;
+  }
+  .social-list__link:hover{
     background-color: #2196f3;
     color: #FFFFFF;
   }
-  .team__social-icon{
+  .social-list__icon{
     fill: currentColor;
   }
+.social-list__icon--wite{
+  fill: #FFFFFF;
+}
 /* Regular customers */
+.clients{
+  margin-bottom: 94px;
+}
 .clients__list {
   display: flex;
   justify-content: space-between;
@@ -384,17 +393,39 @@ ul {
 
 /* footer */
 /* footer */
+.footer{
+  background: #2F303A;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.footer__logo{
+  margin-bottom: 50px;
+}
+.logo__text--white{color: var(--mainTitleColor);}
+
+.footer__adrress{
+  margin-top: 20px;
+}
+.address__item:not(:last-child){
+  margin-bottom: 9px;
+}
 .address__link {
   font-family: var(--mainFont);
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.71; 
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  background-color: black;
 }
 .address__link--white {
   color: var(--mainTitleColor);
-  background-color: black;
+  
 }
 
 /* block-join */
@@ -405,7 +436,9 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--mainTitleColor);
-  background-color: black;
+}
+.block-join__social-list{
+  margin-top: 20px;
 }
 
 /* block-subscribe */
@@ -416,15 +449,40 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--mainTitleColor);
-  background-color: black;
 }
 
+.wrap-form{
+  display: flex;
+  margin-top: 20px;
+}
+.form__input{
+  background-color: #2F303A;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  font-family: var(--mainFont);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  padding-left: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 12px;
+}
 /*  */
 /*  */
 /* portfolio */
 
 /* header */
 /* portfolio-header */
+.header--line-gray{
+  border-bottom: 1px solid #ECECEC;;
+}
 .portfolio-nav__list {
   display: flex;
 }
