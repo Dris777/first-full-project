@@ -393,7 +393,7 @@
                 <p class="block-subscribe__title">Подпишитесь на рассылку</p>
                 <div class="wrap-form">
                     <form class="form block-subscribe__form">
-                        <input class="form__input" type="text" placeholder="E-mail">
+                        <input class="form__input" type="email" name="email" placeholder="E-mail">
                         <button class="button block-subscribe__button" type="reset">Подписаться
                             <svg class="block-subscribe__icon" width="24px" height="24px">
                                 <use xlink:href="../images/sprite.svg#icon-telegram"></use>
@@ -404,7 +404,51 @@
             </div>
             </div>
         </footer>
-    
+    <div class="backdrop">
+        <div class="modal">
+            <p class="modal__title">
+                Оставьте свои данные, мы вам перезвоним
+            </p>
+            <form class="modal__form">
+                <label class="modal__label">
+                    Имя
+                    <input class="modal__input" type="text" name="name" />
+                    <!-- <span class="modal__wrap">
+                        <svg width="18px" height="18px">
+                            <use xlink:href="../images/sprite.svg#icon-person"></use>
+                        </svg>
+                    </span> -->
+                </label>
+                <label class="modal__label">
+                    Телефон
+                    <input class="modal__input" type="tel" name="tel">
+                    <!-- <span class="modal__wrap">
+                        <svg width="18px" height="18px">
+                            <use xlink:href="../images/sprite.svg#phone-black"></use>
+                        </svg>
+                    </span> -->
+                </label>
+                <label class="modal__label">
+                    Почта
+                    <input class="modal__input" type="email" name="email" />
+                    <!-- <span class="modal__wrap">
+                        <svg width="18px" height="18px">
+                            <use xlink:href="../images/sprite.svg#email-black"></use>
+                        </svg>
+                    </span> -->
+                </label>
+                <label class="modal__label ">
+                    Комментарий
+                    <textarea class="modal__textarea" name="feedback" rows="5" placeholder="Введите текст"></textarea>
+                </label>
+                <label class="modal__label">
+                    <input class="modal__checkbox" type="checkbox"  name="accepted">
+                </label>
+                    <p class="modal__label">Соглашаюсь с рассылкой и принимаю <a class="modal__link">Условия договора</a></p>
+                <button class="button" type="reset">Отправить</button>
+            </form>
+        </div>
+    </div>
    
 </body>
 </html>
