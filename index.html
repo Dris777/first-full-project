@@ -428,13 +428,6 @@
                             <use xlink:href="../images/sprite.svg#phone-black"></use>
                         </svg>
                     </span>
-                    <!-- Телефон
-                    <input class="modal__input" type="tel" name="tel">
-                    <span class="modal__wrap">
-                        <svg width="18px" height="18px">
-                            <use xlink:href="../images/sprite.svg#phone-black"></use>
-                        </svg>
-                    </span> -->
                 </label>
                 <label class="modal__label">
                     <span>Почта</span>
@@ -449,14 +442,21 @@
                     Комментарий
                     <textarea class="modal__textarea" name="feedback" rows="5" placeholder="Введите текст"></textarea>
                 </label>
-                <label class="modal__label">
-                    <input class="modal__checkbox" type="checkbox"  name="accepted">
-                </label>
-                    <p class="modal__label">Соглашаюсь с рассылкой и принимаю <a class="modal__link">Условия договора</a></p>
-                <button class="button" type="reset">Отправить</button>
+                <div class="modal__checkbox-wrap">
+                    <label class="modal__label-checkbox" >
+                        <!-- <input class="modal__checkbox" type="checkbox" name="accepted"> -->
+                    </label>
+                    <p class="modal__text">Соглашаюсь с рассылкой и принимаю <a class="modal__link">Условия договора</a></p>
+                </div>
+                <span class="modal__close" tabindex="0">
+                    <svg class="modal__close-icon" width="18px" height="18px">
+                        <use xlink:href="../images/sprite.svg#icon-close"></use>
+                    </svg>
+                </span>
+                <button class="button modal__button" tabindex="0" type="reset">Отправить</button>
             </form>
         </div>
     </div>
-   
+   <script src="/main.js"></script>
 </body>
 </html>
