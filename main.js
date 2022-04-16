@@ -11,6 +11,8 @@ buttonOpen.addEventListener("click", function () {
 buttonClose.addEventListener("click", function () {
     modal.classList.remove("modal--open")
     backdrop.classList.remove("backdrop--show")
+    checkboxActive.classList.remove("modal__checkbox--active-show")
+    checkbox.classList.remove("modal__checkbox--show")
 });
 // CHECKBOX
 let checkbox = document.querySelector(".modal__checkbox");
@@ -25,3 +27,4 @@ checkboxActive.addEventListener("click", function () {
     checkboxActive.classList.remove("modal__checkbox--active-show")
     checkbox.classList.remove("modal__checkbox--show")
 })
+
