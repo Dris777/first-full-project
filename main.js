@@ -23,6 +23,3 @@ checkboxActive.addEventListener("click", function () {
     console.log("ZALUPA")
     checkboxActive.classList.remove("modal__checkbox--active-show")
 })
-// checkboxActive.addEventListener("click", function () {
-//     console.log("zakrivay")
-// });
