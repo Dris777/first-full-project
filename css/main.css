@@ -192,25 +192,37 @@ ul {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero/hero-bg.jpg);
+    url(../images/hero/hero1600w.jpg);
   padding-top: 200px;
   padding-bottom: 200px;
   background-repeat: no-repeat;
 }
-@media screen and (min-device-pixel-ratio: 2),
-screen and (min-resolution: 192dpi),
-screen and (min-resolution: 2dppx) {
-  .hero {
-    background-image: url('../images/hero/hero-bg@2x.jpg');
+
+
+@media screen and (min-width:480px){
+  .hero{
+    background-image: url("../images/hero/hero480w.jpg");
   }
 }
-@media screen and (min-device-pixel-ratio: 3),
-screen and (min-resolution: 288dpi),
-screen and (min-resolution: 3dppx) {
+@media screen and (min-width:480px),
+screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) 
+{
+.hero{
+  background-image: url("../images/hero/hero960w.jpg");
+}
+}
+@media screen and (min-width:480px),
+screen and (min-device-pixel-ratio: 3),
+ screen and (min-resolution: 288dpi),
+screen and (min-resolution: 3dppx)
+{
   .hero {
-    background-image: url('../images/hero/hero-bg@3x.jpg');
+    background-image: url("../images/hero/hero1440w.jpg");
   }
 }
+
 .hero__title {
   font-family: var(--logoFont);
   font-weight: 900;
