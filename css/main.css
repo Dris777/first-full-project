@@ -800,7 +800,11 @@ margin-right: 8.4px;
 margin-left: 12px;
 /* position: relative; */
 }
-
+.modal__checkbox--show{
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 500ms
+}
 .modal__checkbox--active{
   /* display: inline-block; */
   display: block;
@@ -820,13 +824,13 @@ margin-left: 12px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   pointer-events: none;
   transition-property: opacity;
-  transition-duration: 1500ms
+  transition-duration: 500ms
   }
 .modal__checkbox--active-show {
   opacity: 1;
   pointer-events: all;
   transition-property: opacity;
-  transition-duration: 1500ms
+  transition-duration: 500ms
 }
 .modal__text {
   font-family: var(--mainFont);

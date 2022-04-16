@@ -17,9 +17,11 @@ let checkbox = document.querySelector(".modal__checkbox");
 let checkboxActive = document.querySelector(".modal__checkbox--active")
 checkbox.addEventListener("click", function () {
     console.log("dsadasdas")
+    checkbox.classList.add("modal__checkbox--show")
     checkboxActive.classList.add("modal__checkbox--active-show");
 });
 checkboxActive.addEventListener("click", function () {
     console.log("ZALUPA")
     checkboxActive.classList.remove("modal__checkbox--active-show")
+    checkbox.classList.remove("modal__checkbox--show")
 })
