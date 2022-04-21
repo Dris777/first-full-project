@@ -116,6 +116,16 @@ ul {
   position: absolute;
 }
 /* header  */
+@media screen and (min-width:480px) and (max-width:767px) {
+  .header{
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+  }
+  
+}
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -253,6 +263,15 @@ display: flex;
   margin-right: auto;
   margin-left: auto;
 }
+@media screen and (min-width:480px) and (max-width:767px) {
+  .wrap{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+  }
+  
+}
 .hero {
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -334,7 +353,11 @@ screen and (min-resolution: 3dppx) {
 @media screen and (min-width:480px) and (max-width:767px) {
   .peculiarities{
     margin-top: 60px;
-  }
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+    }
 }
 .peculiarities__list {
   display: flex;
@@ -453,6 +476,10 @@ screen and (min-resolution: 3dppx) {
     margin-top: 60px;
     padding-top: 60px;
     padding-bottom: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
   }
   
 }
@@ -548,6 +575,15 @@ screen and (min-resolution: 3dppx) {
 /* .clients{
   margin-bottom: 94px;
 } */
+
+@media screen and (min-width:480px) and (max-width:767px) {
+  .clients {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+  }
+}
 @media screen and (min-width:480px) and (max-width:767px) {
   .clients__title{
     margin-top: 60px;
@@ -609,6 +645,10 @@ screen and (min-resolution: 3dppx) {
 @media screen and (min-width:480px) and (max-width:767px) {
   .footer{
     margin-top: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
   }
   
 }
@@ -1003,7 +1043,6 @@ position: relative;
 }
 @media screen and (min-width:480px) and (max-width:767px) {
   .backdrop {
-    width: 480px;
     height: 796px;
   }
 }
@@ -1236,6 +1275,14 @@ margin-left: 12px;
 }
 
 /* burger-menu */
+@media screen and (min-width:480px) and (max-width:767px) {
+  .burger-menu{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+  }
+}
 .burger{
   width: 480px;
   height: 393px;
@@ -1248,9 +1295,11 @@ margin-left: 12px;
   position: absolute;
   top: 60px;
 }
+
 .burger-menu__page--open{
   display: block;
 }
+
 .burger__list{
   display: flex;
   flex-direction: column;
