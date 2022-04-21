@@ -12,36 +12,34 @@
 
 <body>
     
-    <header class="header header--line-gray">
-        <div class="container header__container">
+    <header class="header">
+        <div class="container header__container header__container--gray">
             <a class="logo header__logo" href="./index.html" lang="en">Web<span class="logo__text">Studio</span></a>
-            <nav class="nav portfolio-nav">
-                <ul class="portfolio-nav__list">
-                    <li class="nav__item portfolio-nav__item"><a class="nav__link portfolio-nav__link" href="./index.html">Студия</a></li>
-                    <li class="nav__item portfolio-nav__item portfolio-nav__item--acent"><a class="nav__link portfolio-nav__link portfolio-nav__link--acent" href="#">Портфолио</a></li>
-                    <li class="nav__item portfolio-nav__item"><a class="nav__link portfolio-nav__link" href="#">Контакты</a></li>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item nav__item--acent"><a class="nav__link " href="./index.html">Студия</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--current" href="#">Портфолио</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="header__list">
-                <li class="header__item">
-                    <a class="header__link" href="mailto:info@devstudio.com">
-                        <svg class="header__icon" width="16" height="12">
+                <li class="header__item"><a class="header__link" href="mailto:info@devstudio.com"><svg class="header__icon"
+                            width="16" height="12">
                             <use xlink:href="./images/sprite.svg#icon-mail"></use>
                         </svg>info@devstudio.com</a></li>
-                <li class="header__item">
-                    <a class="header__link" href="tel:+380961111111">
-                        <svg class="header__icon" width="10" height="16">
+                <li class="header__item"><a class="header__link" href="tel:+380961111111"><svg class="header__icon"
+                            width="10" height="16">
                             <use xlink:href="./images/sprite.svg#icon-phone"></use>
                         </svg>+38 096 111 11 11</a></li>
             </ul>
-            </div>
-        </header>
+        </div>
+    </header>
 
     
     <main class="main">
         <section class="page-portfolio">
             <h1 class="hidden">hide h</h1>
-            <div class="button-set">
+            <div class="button-set container ">
                 <ul class="button-set__list">
                     <li class="button-set__item">
                         <button class=" button-set__button" type="button"> <span class="button-set__text">Все</span></button>
@@ -60,7 +58,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="card-set container">
+            <div class="card-set container" >
                     <ul class="card-set__list">
                         <li class="card-set__item">
                             <img class="card-set__image" src="./images/cards/desctop370w.jpg" srcset="./images/cards/desctop370w.jpg 370w,./images/cards/desctop740w.jpg 740w,./images/cards/desctop1110w.jpg 1110w,./images/cards/desctop354w.jpg 354w,./images/cards/desctop708w.jpg 708w,./images/cards/desctop1062w.jpg 1062w,./images/cards/desctop450w.jpg 450w,./images/cards/desctop900w.jpg 900w,./images/cards/desctop1350w.jpg 1350w"
@@ -226,6 +224,44 @@
         </div>
         </div>
     </footer>
+    <div class="burger-menu">
+        <div class="burger">
+            <nav class="burger__nav">
+                <ul class="burger__list">
+                    <li class="burger__item"><a class="burger__link " href="./index.html">Студия</a></li>
+                    <li class="burger__item"><a class="burger__link  burger__link--current" href="#">Портфолио</a></li>
+                    <li class="burger__item"><a class="burger__link" href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="burger-address">
+                <ul class="burger-address__list">
+                    <li class="burger-address__item ">
+                        <a class="burger-address__link " href="mailto:info@devstudio.com">
+                            <svg class="burger-address__icon" width="16" height="12">
+                                <use xlink:href="./images/sprite.svg#icon-mail"></use>
+                            </svg>info@devstudio.com</a>
+                    </li>
+                    <li class="burger-address__item">
+                        <a class="burger-address__link" href="tel:+380961111111">
+                            <svg class="burger-address__icon" width="10" height="16">
+                                <use xlink:href="./images/sprite.svg#icon-phone"></use>
+                            </svg>+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <span class="burger-menu__icon-open">
+            <svg width="24px" height="16px">
+                <use xlink:href="../images/sprite.svg#burger-open"></use>
+            </svg>
+        </span>
+        <span class="burger-menu__icon-close">
+            <svg width="19px" height="19px">
+                <use xlink:href="../images/sprite.svg#burger-close"></use>
+            </svg>
+        </span>
+    </div>
+    <script src="./burger.js"></script>
 </body>
 
 </html>
