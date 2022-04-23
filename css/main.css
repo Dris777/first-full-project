@@ -737,7 +737,7 @@ screen and (min-resolution: 3dppx) {
   .clients__list{
     flex-wrap: wrap;
     margin-bottom: -30px;
-    margin-right: -30px;
+    /* margin-right: -30px; */
   }
 }
 @media screen and (min-width:768px) and (max-width:1199px) {
@@ -1645,9 +1645,12 @@ margin-left: 12px;
   color: var(--acentColor);
   cursor: pointer;
 }
-.burger-menu__icon-open{
-  display: none;
+@media screen and (min-width:768px){
+  .burger-menu__icon-open {
+    display: none;
+  }
 }
+
 @media screen and (min-width:480px) and (max-width:767px) {
   .burger-menu__icon-open {
     display: flex;
